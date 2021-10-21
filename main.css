@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+
+
+section {
+    margin-left: 270px;
+    min-height: 100vh;
+    background-color: yellowgreen;
+}
+
+.about-us div {
+    position: absolute;
+    top: 30%;
+    background-color: blue;
+    margin :0 0 0 50px;
+}
+
+h1{
+    color: indigo;
+   
+}
+
+p {
+    color: green;
+    
+}
+
+.experience {
+    margin-top: 50px;
+}
