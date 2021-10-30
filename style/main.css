@@ -1,0 +1,147 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+        
+} 
+
+
+
+
+
+
+ body {
+    
+    background-image: linear-gradient(#bccbde, #183b6f);
+    
+}
+
+
+
+
+h1 {
+    display: flex;
+    width: 30%;
+    padding: 5vh;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+}
+
+.header {
+    /* background-color: #e6e9f0; */
+    font-family: 'Rubik', sans-serif;
+    height: 20vh;
+    width: 100%;
+    
+}
+
+.navbar {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width: 100%;
+    
+    
+}
+
+nav > a {
+    display: flex;
+    align-items: center;
+    padding-right: 5vw;
+    color: black;
+
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style:none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+     
+}
+
+
+a:hover {
+    color: rgb(97, 180, 240);
+    font-size: 40px;
+    transition: 0.25s;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #e6e9f0;;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+}
+
+.profile {
+    display: flex;
+    margin-left: 10vh;
+    border: solid #9fa8a3 2px;
+    position: relative;
+    width: 20%;
+    height: 40%;
+    align-content: center;
+    border-radius: 100%;
+    margin-top: 20px;
+    
+}
+
+
+p {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 30px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* .bio {
+    display:flex
+} */
+
