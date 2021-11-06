@@ -14,9 +14,6 @@
 }
 
 
-
-
-
 .navbar {
     display:flex;
     flex-direction:row;
@@ -28,13 +25,17 @@
 
 .title {
     display: flex;
-    width: 25vw;
+    width: 30vw;
     font-family: 'Lora', serif;
     font-size: 40px;
-    border: solid;
+    // border: solid;
     margin-top: 15px;
-    
 }
+
+a:link {
+    text-decoration: none;
+  }
+
 
 .header {
     font-family: 'Rubik', sans-serif;
@@ -129,8 +130,9 @@ nav .mainMenu .closeMenu {
 
 
 .bio {
-    display: flex;
-    flex-wrap: wrap;
+    @include center;
+
+
    
 }
 
@@ -138,7 +140,6 @@ nav .mainMenu .closeMenu {
     display: flex;
     margin-left: 10vh;
     border: solid #a0eec4 2px;
-    
     width: 20%;
     height: 40%;
     align-content: center;
@@ -177,68 +178,6 @@ h2 {
 
 
 
-/* about me page  */
-.about-me{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    color:white;
-    font-family: 'Proza Libre', sans-serif;
-
-}
-
-.maps {
-    display: flex;
-    flex-direction: column;
-    /* margin-left: 30%; */
-    justify-content: center;
-    align-items: center;
-    
-    
-   
-    
-
-}
-
-#maps2 {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   margin-top: 50px;
-   margin: 30px;
-   width: 300px;
-   height: 200px;
-   border-radius: 40px;
-   
-   
-   
-}
-
-.bio2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    width: 80vw;
-   padding: 30px;
-   
-    
-}
-
-@media(min-width: 300px){
-.maps {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-align-content: center;
-        }
-
-}
 
 
 
@@ -247,11 +186,13 @@ align-content: center;
 
 
 
-
-/* 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 10px;
 
-} */
+} 

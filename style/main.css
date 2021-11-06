@@ -30,11 +30,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25vw;
+  width: 30vw;
   font-family: 'Lora', serif;
   font-size: 40px;
-  border: solid;
   margin-top: 15px;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .header {
@@ -188,6 +191,22 @@ h2 {
   font-family: 'Proza Libre', sans-serif;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 10px;
+}
+
 /* about me page  */
 .about-me {
   display: -webkit-box;
@@ -279,21 +298,39 @@ h2 {
   }
 }
 
-/* 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-} */
 #travels {
   margin: 50px;
 }
 
+.listItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+.listItem ul {
+  list-style: none;
+}
+
+.listItem li {
+  margin-bottom: 5px;
+}
+
 /* Blog page  */
 #blog-body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#659999), to(#fac59e));
-  background-image: linear-gradient(#659999, #fac59e);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#659999), to(#e19259));
+  background-image: linear-gradient(#659999, #e19259);
 }
 
 .blogs {
@@ -314,6 +351,7 @@ footer {
 
 .blogs p {
   margin-bottom: 80px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .flex {
