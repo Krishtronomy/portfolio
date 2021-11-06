@@ -1,7 +1,11 @@
 /* Blog page  */
 #blog-body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#659999), to(#e19259));
-  background-image: linear-gradient(#659999, #e19259);
+  background: #E8CBC0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#636FA4), to(#E8CBC0));
+  background: linear-gradient(to right, #636FA4, #E8CBC0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .blogs {

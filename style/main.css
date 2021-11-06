@@ -6,10 +6,21 @@
 }
 
 #body-gradient {
-  /* background-image: linear-gradient(#bccbde, #183b6f); */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e9b5f4), to(#183b6f));
-  background-image: linear-gradient(#e9b5f4, #183b6f);
-  min-height: 100vh;
+  background: #aa4b6b;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#3b8d99), color-stop(#6b6b83), to(#aa4b6b));
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#body-gradient-home {
+  background: #003973;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#E5E5BE), to(#003973));
+  background: linear-gradient(to left, #E5E5BE, #003973);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar {
@@ -31,8 +42,10 @@
   display: -ms-flexbox;
   display: flex;
   width: 30vw;
-  font-family: 'Lora', serif;
-  font-size: 40px;
+  font-family: 'Megrim', cursive;
+  color: white;
+  font-size: 55px;
+  text-shadow: 2px 2px black;
   margin-top: 15px;
 }
 
@@ -67,14 +80,20 @@ nav .mainMenu {
 nav .mainMenu li a {
   display: inline-block;
   padding: 15px;
-  text-decoration: none;
   text-transform: uppercase;
   font-size: 1.5rem;
+  color: white;
 }
 
 a:hover {
   color: #61b4f0;
-  font-size: 40px;
+  font-size: 30px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#hover:hover {
+  background-color: black;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -111,6 +130,13 @@ nav .mainMenu .closeMenu {
         -ms-flex-align: center;
             align-items: center;
     background: #d0e0f8;
+    background: #6d519a;
+    background: #BBD2C5;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#292E49), color-stop(#536976), to(#BBD2C5));
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-transition: top 1s ease;
     transition: top 1s ease;
     display: none;
@@ -125,7 +151,7 @@ nav .mainMenu .closeMenu {
     display: block;
   }
   h1 {
-    font-size: 30px;
+    font-size: 10px;
   }
   .bio p {
     font-size: 20px;
@@ -136,22 +162,34 @@ nav .mainMenu .closeMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.bio img {
+  width: 30%;
+  height: 60%;
+  border-radius: 100%;
+  border: solid #a0eec4 2px;
 }
 
 .profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 10vh;
-  border: solid #a0eec4 2px;
-  width: 20%;
-  height: 40%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -175,20 +213,24 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
   margin-bottom: 0px;
   margin-top: 10px;
   font-size: 18px;
   color: white;
   font-family: 'Proza Libre', sans-serif;
+}
+
+.home p {
+  width: 50%;
 }
 
 footer {
@@ -205,6 +247,18 @@ footer {
   margin-bottom: 50px;
   color: white;
   font-size: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+  .title {
+    font-size: large;
+  }
+  .home {
+    font-size: small;
+  }
+  .home p {
+    width: 90%;
+  }
 }
 
 /* about me page  */
@@ -327,10 +381,23 @@ footer {
   margin-bottom: 5px;
 }
 
+#body-portfolio {
+  background: #2b5876;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#4e4376), to(#2b5876));
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 /* Blog page  */
 #blog-body {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#659999), to(#e19259));
-  background-image: linear-gradient(#659999, #e19259);
+  background: #E8CBC0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#636FA4), to(#E8CBC0));
+  background: linear-gradient(to right, #636FA4, #E8CBC0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .blogs {
@@ -555,5 +622,14 @@ footer {
 
 .blog-menu a {
   padding: 20px;
+}
+
+#body-experience {
+  background: #F3904F;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#3B4371), to(#F3904F));
+  background: linear-gradient(to right, #3B4371, #F3904F);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 /*# sourceMappingURL=main.css.map */
