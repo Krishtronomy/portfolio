@@ -1,0 +1,197 @@
+/* Blog page  */
+
+// linking variables document to use variables and mixins etc
+@import "variables";
+
+#blog-body {
+    // background-image: linear-gradient(#659999, #f4791f);
+    background-image: linear-gradient(#659999, #e19259);
+   
+    // min-height: 100vh;
+}
+
+
+
+.blogs {
+    @include center;
+    flex-direction: column;
+    p{
+        margin-bottom: 80px;
+    }
+}
+
+.flex{
+    @include flex;
+}
+
+.center {
+    @include center;
+    
+}
+
+// specifying the attributes for blog images
+#blog {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    margin: 40px;
+    width: 60vw;
+    height: 70vh;
+}
+
+// specifying the attributes for blog images for big screen sizes (Laptop)
+@media only screen and (max-width: 1300px) {
+    #blog { 
+        height: 40vh; 
+   }
+}
+
+@media only screen and (max-width: 1050px) {
+    #blog { 
+        height: 40vh; 
+        width: 60vw;
+   }
+}
+
+@media only screen and (max-width: 850px) {
+    #blog { 
+        height: 40vh; 
+        width: 70vw;
+   }
+}
+
+
+@media only screen and (max-width: 590px) {
+    #blog { 
+        height: 30vh; 
+        width: 70vw;
+        }
+    
+        
+   h2{
+       font-size: medium;
+   }
+}
+
+@media only screen and (max-width: 420px) {
+    #blog { 
+        height: 30vh; 
+        width: 70vw;
+   }
+   h1{
+       font-size: medium;
+   }
+   h2{
+       font-size: small;
+   }
+}
+
+
+
+// BlogPages
+
+.navbarBlog {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+ 
+    width: 100%;
+    
+}
+
+.blog-image{
+    @include center;
+    width: 70vw;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.blog-header{
+    display: flex;
+    width: 40vw;
+    margin: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+    justify-content: flex-start;
+}
+
+.sub-header{
+    display: flex;
+    margin: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+    justify-content: flex-start;
+}
+
+.blog-text{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 70%;
+    
+}
+
+.blog-text-left{
+    display: flex;
+
+    width: 50vw;
+    margin: 30px;
+}
+
+.blog-image-two{
+    @include center;
+    width: 40%;
+    height: 60%;
+    border-radius: 20px;
+    margin: 20px
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .blog-image-two{
+         
+        width: 50%;
+        height: 20vh;
+        margin: 0px;
+        margin-top: 40px;
+        border-radius: 0px;
+    }
+
+    .blog-image{
+        width:100%;
+        height: 50vh;
+        border-radius: 0px;
+    }
+
+
+    .blog-text {
+        width: 90%
+    }
+}
+
+.recipe {
+    @include flex;
+    justify-content: flex-end;
+
+   
+        margin: 10px;
+        width: 35%;
+        height: 40%;
+    
+}
+
+
+
+#collage{
+    width: 25vw;
+}
+
+
+.blog-menu{
+    display: flex;
+    justify-content: flex-end;
+    width: 40vw;
+    
+    a{
+        padding: 20px;
+    }
+    
+}
