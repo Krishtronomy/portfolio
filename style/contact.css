@@ -156,26 +156,6 @@
 }
 
 /* address, locale */
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-  display: inline;
-}
-
-#fs-frm fieldset.locale input[name="city"] {
-  width: 52%;
-}
-
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-  width: 20%;
-}
-
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"] {
-  margin-right: 3%;
-}
-
 #fs-frm label {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
@@ -186,8 +166,13 @@
 }
 
 @media (max-width: 650px) {
-  #fs-frm textarea {
-    width: 80%;
+  #fs-frm input,
+  #fs-frm select,
+  #fs-frm textarea,
+  #fs-frm fieldset,
+  #fs-frm optgroup,
+  #fs-frm #card-element:disabled {
+    width: 70vw;
   }
   #fs-frm label {
     font-size: 13px;
