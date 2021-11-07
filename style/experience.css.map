@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EAChB,UAAU,EAAE,OAAO;EAAG,+BAA+B;EACrD,UAAU,EAAE,mDAAmD;EAAG,gCAAgC;EAClG,UAAU,EAAE,2CAA2C;EAAE,sEAAsE;CAE9H",
-    "sources": [
-        "experience.scss"
-    ],
-    "names": [],
-    "file": "experience.css"
-}
