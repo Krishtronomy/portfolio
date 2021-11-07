@@ -11,7 +11,7 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
 
 .form{
     @include center; 
-    
+    width: 100%;
 }
 
 
@@ -134,7 +134,7 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
 // Decrease form and text size for smaller screen sizes
 @media (max-width:650px){
       #fs-frm textarea{
-      width: 80vw;
+      width: 80%;
        }
 
        #fs-frm label{
