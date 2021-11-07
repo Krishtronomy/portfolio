@@ -120,7 +120,7 @@ nav .mainMenu .closeMenu {
     nav .mainMenu {
         height: 100vh;
         position: fixed;
-        top: 0;
+        // top: 0;
         right: 0;
         left: 0;
         z-index: 10;
@@ -133,7 +133,9 @@ nav .mainMenu .closeMenu {
         background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
         transition: top 1s ease;
-        display: none;
+        // display: none;
+        display: flex;
+        top: -100%;
     }
 
     nav .mainMenu .closeMenu {
