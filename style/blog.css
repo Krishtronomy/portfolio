@@ -55,8 +55,8 @@
       flex-wrap: wrap;
   border-radius: 30px;
   margin: 40px;
-  width: 60vw;
-  height: 70vh;
+  width: 30vw;
+  height: 40vh;
 }
 
 @media only screen and (max-width: 1300px) {

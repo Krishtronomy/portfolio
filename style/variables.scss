@@ -8,3 +8,9 @@
 @mixin flex{
     display: flex;
 }
+
+@mixin font{
+    font-size: 18px;
+    color:white;
+    font-family: 'Proza Libre', sans-serif;
+}
