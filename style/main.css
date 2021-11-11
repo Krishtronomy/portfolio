@@ -115,7 +115,6 @@ nav .mainMenu .closeMenu {
   nav .mainMenu {
     height: 100vh;
     position: fixed;
-    top: 0;
     right: 0;
     left: 0;
     z-index: 10;
@@ -137,7 +136,10 @@ nav .mainMenu .closeMenu {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-transition: top 1s ease;
     transition: top 1s ease;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: -120%;
   }
   nav .mainMenu .closeMenu {
     display: block;
@@ -257,6 +259,19 @@ footer {
   .home p {
     width: 90%;
   }
+}
+
+#icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px;
 }
 
 /* about me page  */
