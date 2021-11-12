@@ -24,7 +24,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* margin-left: 30%; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -86,6 +85,18 @@
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .bio2 {
+    width: 100%;
+    font-size: 12px;
+  }
+  .listItem {
+    width: 75%;
+    margin-left: 12.5%;
+    font-size: 12px;
   }
 }
 

@@ -12,6 +12,7 @@
   background: -webkit-gradient(linear, left top, right top, from(#3b8d99), color-stop(#6b6b83), to(#aa4b6b));
   background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  max-width: 100%;
 }
 
 #body-gradient-home {
@@ -300,7 +301,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* margin-left: 30%; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -362,6 +362,18 @@ footer {
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .bio2 {
+    width: 100%;
+    font-size: 12px;
+  }
+  .listItem {
+    width: 75%;
+    margin-left: 12.5%;
+    font-size: 12px;
   }
 }
 
@@ -537,9 +549,6 @@ footer {
     margin-left: 0px;
     margin-top: 5vh;
     margin-bottom: 5vh;
-  }
-  h2 {
-    width: 100%;
   }
 }
 

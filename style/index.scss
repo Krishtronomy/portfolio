@@ -42,7 +42,6 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
 .title {
     display: flex;
     width: 30vw;
-    // font-family: 'Rubik', sans-serif;
     font-family: 'Megrim', cursive;
     color: white;
     font-size: 55px;
@@ -57,7 +56,6 @@ a:link {
 
 .header {
     font-family: 'Rubik', sans-serif;
-    
     height: 20vh;
     width: 100%;
     
@@ -81,7 +79,6 @@ nav .mainMenu {
 nav .mainMenu li a {
     display: inline-block;
     padding: 15px;
-    // text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
     color:white;

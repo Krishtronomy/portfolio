@@ -15,14 +15,9 @@
 .maps {
     display: flex;
     flex-direction: column;
-    /* margin-left: 30%; */
     justify-content: center;
     align-items: center;
     
-    
-   
-    
-
 }
 
 #maps2 {
@@ -36,8 +31,7 @@
    height: 200px;
    border-radius: 40px;
    
-   
-   
+    
 }
 
 .bio2 {
@@ -61,6 +55,20 @@ align-items: center;
 align-content: center;
         }
 
+}
+
+// Increase width of text to be stretched out 
+// on smaller devices (Smartphones)
+@media(max-width: 420px){
+    .bio2{
+        width: 100%;
+        font-size: 12px;
+    }
+    .listItem {
+        width: 75%;
+        margin-left: 12.5%;
+        font-size: 12px;
+    }
 }
 
 

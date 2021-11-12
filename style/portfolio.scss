@@ -101,7 +101,8 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
         }
 }
 
-
+//  Display items on column format with text 
+// stretched out to width of screen on smaller devices (Smartphones)
 @media only screen and (max-width: 490px) {
     .projects {
         @include center;
