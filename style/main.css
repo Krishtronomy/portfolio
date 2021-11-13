@@ -411,12 +411,12 @@ footer {
   margin-bottom: 100px;
 }
 
-#project-img {
+.project-img {
   width: 700px;
   height: 500px;
 }
 
-#project-img:hover {
+.project-img:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
   -webkit-transition: 0.15s;
@@ -460,7 +460,7 @@ footer {
 }
 
 @media only screen and (max-width: 1460px) {
-  #project-img {
+  .project-img {
     width: 40vw;
     height: 50vh;
   }
@@ -477,7 +477,7 @@ footer {
 }
 
 @media only screen and (max-width: 850px) {
-  #project-img {
+  .project-img {
     width: 30vw;
     height: 20vh;
   }
@@ -511,7 +511,7 @@ footer {
     margin: 0px;
     width: 100vw;
   }
-  #project-img {
+  .project-img {
     width: 70vw;
     height: 30vh;
   }
@@ -604,7 +604,7 @@ footer {
           align-items: center;
 }
 
-#blog {
+.blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

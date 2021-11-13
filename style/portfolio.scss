@@ -18,13 +18,13 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
 }
 
 // Set sizing for project images
-#project-img{
+.project-img{
     width: 700px;
     height: 500px;
 }
 
 // Set hover attributes when image is hovered over 
-#project-img:hover{
+.project-img:hover{
     transform: scale(1.25);
     transition: 0.15s;
 }
@@ -60,7 +60,7 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
 
 // Media breakpoint for Laptop screens sizes
 @media only screen and (max-width: 1460px) {
-    #project-img{ 
+    .project-img{ 
         width: 40vw;
         height: 50vh;
         }
@@ -85,7 +85,7 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
 
 // Media breakpoint for medium screens sizes
 @media only screen and (max-width: 850px) {
-    #project-img{ 
+    .project-img{ 
         width: 30vw;
         height: 20vh;
         }
@@ -120,7 +120,7 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
 
    
 
-    #project-img{ 
+    .project-img{ 
         width: 70vw;
         height: 30vh;
         }
