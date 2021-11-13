@@ -92,7 +92,7 @@ a:hover {
   transition: 0.25s;
 }
 
-#hover:hover {
+.hover:hover {
   background-color: black;
   -webkit-transition: 0.25s;
   transition: 0.25s;

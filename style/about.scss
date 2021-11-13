@@ -13,7 +13,7 @@
 }
 
 // Set margin for sub-heading
-#travels {
+.travels {
     margin: 50px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 // Styling for embedded maps section
-#maps2 {
+.maps2 {
    @include center;
    flex-wrap: wrap;
    margin-top: 50px;

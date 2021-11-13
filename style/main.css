@@ -92,7 +92,7 @@ a:hover {
   transition: 0.25s;
 }
 
-#hover:hover {
+.hover:hover {
   background-color: black;
   -webkit-transition: 0.25s;
   transition: 0.25s;
@@ -282,7 +282,7 @@ footer {
           flex-direction: column;
 }
 
-#travels {
+.travels {
   margin: 50px;
 }
 
@@ -302,7 +302,7 @@ footer {
           flex-direction: column;
 }
 
-#maps2 {
+.maps2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
