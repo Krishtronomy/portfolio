@@ -52,10 +52,13 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
 }
 
 
+
+
+
 @media only screen and (max-width: 1460px) {
     #project-img{ 
         width: 40vw;
-        height: 30vh;
+        height: 50vh;
         }
     .project-text{
         
@@ -93,7 +96,7 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
     .project-header{
         
         h2 {
-        width: 20vw;
+        width: 30vw;
         height:5vh;
         font-size: 14px;
     
@@ -125,21 +128,29 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
         font-size: 10px;
         margin: 0px;
         margin-bottom: 5vh;
+        margin-left: 20vw;
+        margin-right: 20vw;
         
     }
 
     .project-header{
         
 
-        h2 {
-        width: 100%;
+        
+        width: 100vw;
         height:5vh;
         font-size: 13px;
         margin-left: 0px;
         margin-top: 5vh;
         margin-bottom: 5vh;
     
-            }
+           
         }
 
-}
+    }
+
+    #small-heading{
+        @include center;
+        font-family:Arial, Helvetica, sans-serif;
+        color: oldlace
+    }

@@ -146,6 +146,40 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
        #fs-frm label{
          font-size: 13px;
        }
-
-
 }
+
+#social-heading{
+  @include center;
+  @include text-contact;
+  color: white;
+}
+
+#resume{
+  @include center;
+  @include text-contact;
+  color: lightblue;
+  font-size: 20px;
+  text-decoration: underline;
+}
+#resume:hover{
+  color: black;
+  text-decoration: none;
+  
+}
+
+.socials{
+  @include center;
+  flex-direction: row;
+  
+}
+
+#icons{
+  @include center;
+  margin: 30px;
+  color: white;
+  font-size: 30px;
+}
+
+  #icons:hover{
+    color: black;
+  }

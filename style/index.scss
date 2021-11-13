@@ -89,7 +89,7 @@ nav .mainMenu li a {
 
 
 a:hover {
-    color: rgb(97, 180, 240);
+    color: black;
   
     font-size: 30px;
     transition: 0.25s;
@@ -235,8 +235,5 @@ footer {
     }
 }
 
-#icons{
-    @include center;
-    margin: 40px;
-    
-}
+
+
