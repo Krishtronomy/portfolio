@@ -56,22 +56,22 @@ Below is the Sitemap and shows how each page is linked to each other. The landin
 Below are the Wireframes used for planning and making mockups.
 
 ### Home 
-![Photo of Homepage](/docs/home-WF.png) 
+![Photo of Homepage](/docs/Home-WF.png) 
 
 ### About 
-![Photo of About page](/docs/about-WF.png) 
+![Photo of About page](/docs/About-WF.png) 
 
 ### Portfolio 
-![Photo of portfolio page](/docs/portfolio-WF.png) 
+![Photo of portfolio page](/docs/Portfolio-WF.png) 
 
 ### Blog 
-![Photo of Blog page](/docs/blog-WF.png) 
+![Photo of Blog page](/docs/Blog-WF.png) 
 
 ### Blog Post 
 ![Photo of Blog post](/docs/BlogPost-WF.png) 
 
 ### Contact 
-![Photo of Contact page](/docs/contact-WF.png)
+![Photo of Contact page](/docs/Contact-WF.png)
 
 
 
