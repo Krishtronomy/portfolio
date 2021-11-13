@@ -1,60 +1,57 @@
+// About me page
+
 @import "variables";
 
-/* about me page  */
+// About me section styling
 .about-me{
-    display: flex;
+    @include center;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     font-size: 18px;
     color:white;
     font-family: 'Proza Libre', sans-serif;
-
-}
-
-.maps {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
 }
 
+// Set margin for sub-heading
+#travels {
+    margin: 50px;
+}
+
+// Flex positioning for maps container
+.maps {
+    @include center;
+    flex-direction: column; 
+}
+
+// Styling for embedded maps section
 #maps2 {
-   display: flex;
+   @include center;
    flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
    margin-top: 50px;
    margin: 30px;
    width: 300px;
    height: 200px;
-   border-radius: 40px;
-   
-    
+   border-radius: 40px; 
 }
 
+// About me text styling
 .bio2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
     width: 80vw;
-   padding: 30px;
-   
-    
+    padding: 30px; 
 }
+
+// Media breakpoint for really small smartphones
 
 @media(min-width: 300px){
 .maps {
-display: flex;
+@include center;
 flex-wrap: wrap;
 flex-direction: row;
-justify-content: center;
-align-items: center;
-align-content: center;
-        }
-
+    }
 }
 
 // Increase width of text to be stretched out 
@@ -72,10 +69,7 @@ align-content: center;
 }
 
 
-#travels {
-    margin: 50px;
-}
-
+// Set styling for Work history and Experience section
 .listItem {
     @include center;
     text-align: center;

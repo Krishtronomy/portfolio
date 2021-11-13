@@ -9,11 +9,10 @@
     background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
 }
 
 
-
+// Styling and flex direction for blog listings
 .blogs {
     @include center;
     flex-direction: column;
@@ -23,6 +22,7 @@
     }
 }
 
+// Styling for blog posts
 .flex{
     @include flex;
 }
@@ -49,6 +49,7 @@
    }
 }
 
+// Medium to big screen sizes
 @media only screen and (max-width: 1050px) {
     #blog { 
         height: 40vh; 
@@ -56,6 +57,7 @@
    }
 }
 
+// Medium to small screen sizes
 @media only screen and (max-width: 850px) {
     #blog { 
         height: 40vh; 
@@ -63,7 +65,7 @@
    }
 }
 
-
+// Smaller screen sizes (tablet)
 @media only screen and (max-width: 590px) {
     #blog { 
         height: 30vh; 
@@ -76,6 +78,7 @@
    }
 }
 
+// Small screen sizes (smartphones)
 @media only screen and (max-width: 420px) {
     #blog { 
         height: 30vh; 
@@ -91,7 +94,7 @@
 
 
 
-// BlogPages
+// Blog Pages styling
 
 .navbarBlog {
     display:flex;
@@ -146,7 +149,7 @@
 }
 
 
-
+// Medium screen responsiveness
 @media only screen and (max-width: 500px) {
     .blog-image-two{
          
@@ -177,9 +180,7 @@
         margin: 10px;
         width: 35%;
         height: 40%;
-    
 }
-
 
 
 #collage{

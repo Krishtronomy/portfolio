@@ -1,19 +1,13 @@
+// Home Page
+
 @import "variables";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 } 
 
-// #body-gradient{
-    
-//     /* background-image: linear-gradient(#bccbde, #183b6f); */
-//     background-image: linear-gradient(#e9b5f4, #183b6f);
-//     min-height: 100vh;
-     
-// }
 
 #body-gradient{
 background: #aa4b6b;  /* fallback for old browsers */
@@ -24,21 +18,18 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
 #body-gradient-home{
     background: #003973;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
-    
+    background: linear-gradient(to left, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
 }
 
+// Navbar component
 .navbar {
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
-    width: 100%;
-    
+    width: 100%;    
 }
 
-
+// Title/Heading 
 .title {
     display: flex;
     width: 30vw;
@@ -53,44 +44,38 @@ a:link {
     text-decoration: none;
   }
 
-
+// Header container with font styling for nav items
 .header {
     font-family: 'Rubik', sans-serif;
     height: 20vh;
-    width: 100%;
-    
+    width: 100%;    
 }
-
-
 
 nav > a {
     display: flex;
     align-items: center;
     padding-right: 5vw;
     color: black;
-
 }
 
+// Nav menu items - remove bulletpoint styling
 nav .mainMenu {
     display: flex;
     list-style:none;
 }
 
+// Nav menu items additional styling
 nav .mainMenu li a {
     display: inline-block;
     padding: 15px;
     text-transform: uppercase;
     font-size: 1.5rem;
-    color:white;
-    
+    color:white;    
 }
 
-
-
-
+// Hover effects for links and selected classes to change colour
 a:hover {
     color: black;
-  
     font-size: 30px;
     transition: 0.25s;
 }
@@ -100,6 +85,7 @@ a:hover {
     transition: 0.25s;
 }
 
+// Hamburger function menu
 nav .openMenu {
     font-size: 2rem;
     margin: 20px;
@@ -113,74 +99,18 @@ nav .mainMenu .closeMenu {
     cursor: pointer;
 }
 
-@media(max-width: 850px){
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        // top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        // background: #6d519a;
-        background: #BBD2C5;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-        transition: top 1s ease;
-        // display: none;
-        display: flex;
-        top: -120%;
-    }
-
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-
-    }
-
-    nav .openMenu {
-        display: block;
-    }
-
-    h1 {
-    font-size: 10px;  
-    }
-    .bio p {
-        font-size: 20px;
-    }
-}
-
-
-
-.bio {
-   @include center;
-   margin-bottom: 30px;
-        img{
-            
-            width: 30%;
-            height: 60%;
-            border-radius: 100%;
-            border: solid #a0eec4 2px;
-            
-        }
-}
     
 
-
+// Sub-heading section
 .profile {
     @include center;
-    
     margin-top: 20px;
     margin-bottom: 50px;
 }
 
 
-
+// Setting global styling for h2 headings
 h2 {
     @include center;
     font-size: 30px;
@@ -190,7 +120,7 @@ h2 {
     margin-bottom: 0px;
 }
 
-
+// Biography paragraph section styling
 .home {
     @include center;
     flex-wrap: wrap;
@@ -204,10 +134,9 @@ h2 {
    p{
     width: 50%;
    }
-   
 }
 
-
+// Footer component styling
 footer {
     display: flex;
     justify-content: center;
@@ -237,3 +166,54 @@ footer {
 
 
 
+// Media breakpoint for medium-small screens
+@media(max-width: 850px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #BBD2C5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        transition: top 1s ease;
+        display: flex;
+        top: -120%;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    h1 {
+    font-size: 10px;  
+    }
+    .bio p {
+        font-size: 20px;
+    }
+}
+
+
+// Profile image styling
+.bio {
+   @include center;
+   margin-bottom: 30px;
+        img{
+            width: 30%;
+            height: 60%;
+            border-radius: 100%;
+            border: solid #a0eec4 2px; 
+        }
+}

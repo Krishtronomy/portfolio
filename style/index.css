@@ -111,73 +111,6 @@ nav .mainMenu .closeMenu {
   cursor: pointer;
 }
 
-@media (max-width: 850px) {
-  nav .mainMenu {
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 10;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #BBD2C5;
-    /* fallback for old browsers */
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-gradient(linear, left top, right top, from(#292E49), color-stop(#536976), to(#BBD2C5));
-    background: linear-gradient(to right, #292E49, #536976, #BBD2C5);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-transition: top 1s ease;
-    transition: top 1s ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: -120%;
-  }
-  nav .mainMenu .closeMenu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  nav .openMenu {
-    display: block;
-  }
-  h1 {
-    font-size: 10px;
-  }
-  .bio p {
-    font-size: 20px;
-  }
-}
-
-.bio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
-}
-
-.bio img {
-  width: 30%;
-  height: 60%;
-  border-radius: 100%;
-  border: solid #a0eec4 2px;
-}
-
 .profile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,5 +192,72 @@ footer {
   .home p {
     width: 90%;
   }
+}
+
+@media (max-width: 850px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #BBD2C5;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#292E49), color-stop(#536976), to(#BBD2C5));
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: -120%;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  h1 {
+    font-size: 10px;
+  }
+  .bio p {
+    font-size: 20px;
+  }
+}
+
+.bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.bio img {
+  width: 30%;
+  height: 60%;
+  border-radius: 100%;
+  border: solid #a0eec4 2px;
 }
 /*# sourceMappingURL=index.css.map */

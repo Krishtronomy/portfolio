@@ -1,13 +1,14 @@
+// Portfolio page 
+
 @import "variables";
 
 #body-portfolio{
 background: #2b5876;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
-
+// Styling for projects section 
 .projects{
     @include flex;
     margin-left: 10%;
@@ -16,25 +17,27 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
 
 }
 
+// Set sizing for project images
 #project-img{
     width: 700px;
     height: 500px;
 }
 
+// Set hover attributes when image is hovered over 
 #project-img:hover{
     transform: scale(1.25);
     transition: 0.15s;
 }
 
+// Styling and alignment for project headings
 .project-header{
     @include flex;
     width: 20vw;
     height:30%;
     margin-left: 40%;
-
 }
 
-
+// Styling and alignment for project description
 .project-text {
     @include flex;
     @include font;
@@ -46,6 +49,7 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
 
 }
 
+// Alignment for project images
 .column{
     @include flex;
     flex-direction: column;
@@ -54,7 +58,7 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
 
 
 
-
+// Media breakpoint for Laptop screens sizes
 @media only screen and (max-width: 1460px) {
     #project-img{ 
         width: 40vw;
@@ -76,10 +80,10 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
         font-size: 13px;
     
         }
-}
+    }
 }
 
-
+// Media breakpoint for medium screens sizes
 @media only screen and (max-width: 850px) {
     #project-img{ 
         width: 30vw;
@@ -133,10 +137,7 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
         
     }
 
-    .project-header{
-        
-
-        
+    .project-header{ 
         width: 100vw;
         height:5vh;
         font-size: 13px;
@@ -144,7 +145,6 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
         margin-top: 5vh;
         margin-bottom: 5vh;
     
-           
         }
 
     }
