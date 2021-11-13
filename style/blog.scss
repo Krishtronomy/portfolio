@@ -44,14 +44,14 @@
 
 // specifying the attributes for blog images for big screen sizes (Laptop)
 @media only screen and (max-width: 1300px) {
-    #blog { 
+    .blog { 
         height: 40vh; 
    }
 }
 
 // Medium to big screen sizes
 @media only screen and (max-width: 1050px) {
-    #blog { 
+    .blog { 
         height: 40vh; 
         width: 60vw;
    }
@@ -59,7 +59,7 @@
 
 // Medium to small screen sizes
 @media only screen and (max-width: 850px) {
-    #blog { 
+    .blog { 
         height: 40vh; 
         width: 70vw;
    }
@@ -67,7 +67,7 @@
 
 // Smaller screen sizes (tablet)
 @media only screen and (max-width: 590px) {
-    #blog { 
+    .blog { 
         height: 30vh; 
         width: 70vw;
         }
@@ -80,7 +80,7 @@
 
 // Small screen sizes (smartphones)
 @media only screen and (max-width: 420px) {
-    #blog { 
+    .blog { 
         height: 30vh; 
         width: 70vw;
    }
