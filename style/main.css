@@ -771,7 +771,7 @@ footer {
   height: 40%;
 }
 
-#collage {
+.collage {
   width: 25vw;
 }
 
@@ -1024,7 +1024,7 @@ footer {
           flex-direction: row;
 }
 
-#icons {
+#icons1, #icons2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1039,7 +1039,7 @@ footer {
   font-size: 30px;
 }
 
-#icons:hover {
+#icons1:hover, #icons2:hover {
   color: black;
 }
 /*# sourceMappingURL=main.css.map */

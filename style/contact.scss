@@ -165,13 +165,11 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
   
 }
 
-#icons{
+#icons1, #icons2{
   @include center;
-  margin: 30px;
-  color: white;
-  font-size: 30px;
+  @include icons;
 }
 
-  #icons:hover{
+#icons1:hover, #icons2:hover{
     color: black;
   }

@@ -233,7 +233,7 @@
           flex-direction: row;
 }
 
-#icons {
+#icons1, #icons2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,7 +248,7 @@
   font-size: 30px;
 }
 
-#icons:hover {
+#icons1:hover, #icons2:hover {
   color: black;
 }
 /*# sourceMappingURL=contact.css.map */
